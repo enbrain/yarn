@@ -1,0 +1,40 @@
+CLASS net/minecraft/class_5676 net/minecraft/client/gui/widget/CycleButtonWidget
+	FIELD field_27964 index I
+	FIELD field_27965 value Ljava/lang/Object;
+	FIELD field_27970 tooltipGetter Lnet/minecraft/class_5676$class_5679;
+	METHOD <init> (IIIILnet/minecraft/class_2561;Lnet/minecraft/class_2561;ILjava/lang/Object;Lnet/minecraft/class_5676$class_5680;Ljava/util/function/Function;Ljava/util/function/Function;Lnet/minecraft/class_5676$class_5678;Lnet/minecraft/class_5676$class_5679;Z)V
+		ARG 7 index
+		ARG 8 value
+		ARG 13 tooltipGetter
+	METHOD method_32603 getValue ()Ljava/lang/Object;
+	METHOD method_32604 (Ljava/lang/Boolean;)Lnet/minecraft/class_2561;
+		ARG 0 value
+	METHOD method_32605 (Ljava/lang/Object;)V
+		ARG 1 value
+	METHOD method_32606 createBuilder (Ljava/util/function/Function;)Lnet/minecraft/class_5676$class_5677;
+		ARG 0 labelGetter
+	METHOD method_32607 createBuilder (Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;)Lnet/minecraft/class_5676$class_5677;
+	METHOD method_32608 (Lnet/minecraft/class_2561;Lnet/minecraft/class_2561;Ljava/lang/Boolean;)Lnet/minecraft/class_2561;
+		ARG 2 value
+	METHOD method_32609 setValue (Ljava/lang/Object;)V
+		ARG 1 value
+	METHOD method_32612 cycle (I)V
+		ARG 1 amount
+	METHOD method_32613 createBuilder (Z)Lnet/minecraft/class_5676$class_5677;
+		ARG 0 value
+	METHOD method_32614 createBuilder ()Lnet/minecraft/class_5676$class_5677;
+	CLASS class_5677 Builder
+		FIELD field_27973 value Ljava/lang/Object;
+		FIELD field_27975 tooltipGetter Lnet/minecraft/class_5676$class_5679;
+		METHOD method_32617 build (IIIILnet/minecraft/class_2561;Lnet/minecraft/class_5676$class_5678;)Lnet/minecraft/class_5676;
+		METHOD method_32618 tooltipGetter (Lnet/minecraft/class_5676$class_5679;)Lnet/minecraft/class_5676$class_5677;
+			ARG 1 tooltipGetter
+		METHOD method_32619 value (Ljava/lang/Object;)Lnet/minecraft/class_5676$class_5677;
+			ARG 1 value
+		METHOD method_32625 (Ljava/lang/Object;)Ljava/util/List;
+			ARG 0 value
+	CLASS class_5678 ValueChangeListener
+		METHOD onValueChange (Lnet/minecraft/class_5676;Ljava/lang/Object;)V
+			ARG 1 button
+			ARG 2 value
+	CLASS class_5679 TooltipGetter
